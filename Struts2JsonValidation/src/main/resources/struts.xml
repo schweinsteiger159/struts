@@ -33,6 +33,10 @@
 				<param name="ignoreHierarchy">false</param>
 			</result>
 		</action>
+		<action name="loginForm" class="actions.LoginForm">
+			<result name="login" type="redirect">login.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
 
 		<action name="login" class="actions.LoginAction">
 			<result name="success" type="redirect">/userInfo</result>
@@ -40,6 +44,20 @@
 		</action>
 		<action name="userInfo" class="actions.UserInfoAction">
 			<result name="userInfoPage">UserInfo.jsp</result>
+		</action>
+
+		<action name="listCustomer" class="actions.CustomerAction"
+			method="viewCustomer">
+			<result name="customer" type="redirect">customer.jsp</result>
+			<result name="error">error.jsp</result>
+		</action>
+
+		<action name="getAll" class="actions.CustomerAction"
+			method="getAll">
+			
+			<result name="*" type="json">
+				<param name="ignoreHierarchy">false</param>
+			</result>
 		</action>
 	</package>
 </struts>

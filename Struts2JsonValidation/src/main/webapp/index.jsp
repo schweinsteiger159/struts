@@ -9,7 +9,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     </head>
     <body>
-        <h1>Hello World!</h1><a href="login.jsp">login</a><br/>
+        <h1>Hello World!</h1><a href="loginForm">login</a><br/><a href="listCustomer">Customer</a>
         <input type="text" />
         <input type="number" />
         <button type="button" id="btn-submit">submit</button>
